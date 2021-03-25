@@ -1,25 +1,24 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
-import "./App.css";
-import DeveloperContext from "./utils/DeveloperContext";
 
 function App() {
-  document.title = "Joey Davidson Portfolio";
   return (
     <Router>
       <div>
-      <DeveloperContext.Provider value={developerState}>
         <Navbar />
         <Wrapper>
-          <Route exact path="/" component={Search} />
-          <Route exact path="/signup" component={Signup} />
-          <Route exact path="/search" component={Search} />
+          <Route exact path="/" component={About} />
+          <Route exact path="/About" component={About} />
+          <Route exact path="/Contact" component={Contact} />
+          <Route exact path="/Portfolio" component={Portfolio} />
         </Wrapper>
         <Footer />
-      </DeveloperContext.Provider>
       </div>
     </Router>
   );
