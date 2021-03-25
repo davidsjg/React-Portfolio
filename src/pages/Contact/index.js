@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // import React, { useState } from "react";
 // import Container from "../../components/Container";
 // import Col from "../../components/Col";
@@ -61,7 +61,7 @@ function Contact() {
     return (
     <>
       <div className="mt-4">
-        <h2>Welcome to Wikipedia Searcher!</h2>
+        <h2>Welcome to THE CONTACT PAGE</h2>
       </div>
     </>  
     )
