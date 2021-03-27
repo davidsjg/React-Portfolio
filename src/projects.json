@@ -1,10 +1,12 @@
 [
+
   {
 
     "id": 1,
     "name": "Community Car Share",
     "website": "https://thawing-reaches-91071.herokuapp.com/",
-    "github": "https://github.com/swhachey/community_car_share"
+    "github": "https://github.com/swhachey/community_car_share",
+    "imgFile": 123
   },
   {
     "id": 2,
