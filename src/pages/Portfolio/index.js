@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import FriendCard from "../../components/FriendCard"
+import projects from "../../projects.json";
+
 
 
 function Portfolio() {
@@ -6,7 +9,14 @@ function Portfolio() {
   return (
   <>
     <div className="mt-4">
-      <h2>Welcome to Wikipedia Searcher!</h2>
+    {projects.map(projects => (
+          <FriendCard
+            id={projects.id}
+            key={projects.id}
+            name={projects.name}
+            image={projects.image}
+          />
+          ))}
     </div>
   </>  
   )

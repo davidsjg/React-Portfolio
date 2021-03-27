@@ -28,14 +28,6 @@ class App extends Component {
           <Route exact path="/About" component={About} />
           <Route exact path="/Contact" component={Contact} />
           <Route exact path="/Portfolio" component={Portfolio} />
-          {this.state.projects.map(projects => (
-          <FriendCard
-            id={projects.id}
-            key={projects.id}
-            name={projects.name}
-            image={projects.image}
-          />
-          ))}
         </Wrapper>
         <Footer />
       </div>
