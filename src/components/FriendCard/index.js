@@ -18,16 +18,21 @@ function FriendCard(props) {
             <strong>Name:</strong> {props.name}
           </li>
           <li>
-            <strong>Website:</strong> {props.website}
+            <strong>Website:</strong> 
+            <div><a href={props.website} target="blank">{props.website}</a></div>
           </li>
           <li>
-            <strong>Github:</strong> {props.github}
+            <strong>Github:</strong> 
+            <div><a href={props.github} target="blank">{props.github}</a></div>
           </li>
         </ul>
       </div>
     </div>
   );
 }
+
+
+
 
 export default FriendCard;
 
