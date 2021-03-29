@@ -1,0 +1,23 @@
+[
+
+  {
+    "id": 1,
+    "name": "Contact Page",
+    "website": "contact",
+    "image": "./images/carShare1.png"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Page",
+    "website": "https://davidsjg.github.io/ecommerce/",
+    "github": "https://github.com/davidsjg/ecommerce",
+    "image": "./images/Chihuahua.png"
+  },
+  {
+
+    "id": 3,
+    "name": "About Me Page",
+    "website": "Contact.html",
+    "image": "./images/carShare1.png"
+  }
+]

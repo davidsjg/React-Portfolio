@@ -1,10 +1,11 @@
 import React from "react";
 import "./style.css";
 import 'materialize-css';
+import {Link} from 'react-router-dom'
 import { Button, Card, Row, Col } from 'react-materialize';
 
 
-function FriendCard(props) {
+function HomePage(props) {
   return (
     <div className="card">
       <div className="img-container">
@@ -17,15 +18,9 @@ function FriendCard(props) {
       <div className="content">
         <ul>
           <li>
-            <strong>Name:</strong> {props.name}
-          </li>
-          <li>
-            <strong>Website:</strong> 
-            <div><a href={props.website} target="blank">{props.website}</a></div>
-          </li>
-          <li>
-            <strong>Github:</strong> 
-            <div><a href={props.github} target="blank">{props.github}</a></div>
+            <strong></strong> 
+            <Link to="/contact">{props.name}</Link>
+            {/* <div><a href={props.website} target="blank">Contact Page</a></div> */}
           </li>
         </ul>
       </div>
@@ -36,6 +31,6 @@ function FriendCard(props) {
 
 
 
-export default FriendCard;
+export default HomePage;
 
 

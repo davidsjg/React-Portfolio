@@ -1,16 +1,40 @@
-import React, { useState, useEffect } from "react";
-import "./index.css"
+import React, { useState } from "react";
+import FriendCard from "../../components/FriendCard"
+import HomePage from "../../components/HomePage"
+import homePage from "../../homePage.json";
+import {Container, Card} from 'semantic-ui-react'
 
 
-function About() {
+
+
+function Portfolio() {
 
   return (
   <>
-    <div className="mt-4 welcome">
-      <h2>Welcome to Joey Davidson's Homepage!</h2>
-    </div>
+    <Container>
+    <Card.Group itemsPerRow= {3} stackable={false}>
+    {homePage.map(homePage => (
+          <FriendCard
+            id={homePage.id}
+            key={homePage.id}
+            name={homePage.name}
+            website={homePage.website}
+            github={homePage.github}
+            image={homePage.name}
+          />,
+          <HomePage
+            id={homePage.id}
+            key={homePage.id}
+            name={homePage.name}
+            website={homePage.website}
+            github={homePage.github}
+            image={homePage.name}
+          />
+          ))}
+    </Card.Group>
+    </Container>
   </>  
   )
 }
 
-export default About;
+export default Portfolio;
