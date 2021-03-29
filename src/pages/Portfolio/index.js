@@ -19,7 +19,7 @@ function Portfolio() {
             name={projects.name}
             website={projects.website}
             github={projects.github}
-            image={projects.image}
+            image={projects.name}
           />
           ))}
     </Card.Group>

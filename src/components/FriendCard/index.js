@@ -6,7 +6,11 @@ function FriendCard(props) {
   return (
     <div className="card">
       <div className="img-container">
-        <img alt={props.name} src={props.image} />
+        <img alt={props.name} 
+        // src={require(`../../projects.json/${props.name}.png`)}
+        src={`${process.env.PUBLIC_URL}/assets/images/${props.name}.png`} 
+        className="project-bg"
+        />
       </div>
       <div className="content">
         <ul>
@@ -26,3 +30,5 @@ function FriendCard(props) {
 }
 
 export default FriendCard;
+
+
